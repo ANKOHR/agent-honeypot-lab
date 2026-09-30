@@ -46,6 +46,7 @@ def validate(pack):
             require(isinstance(step["element"], str) and step["element"] and step["element"] not in elements)
             require(step["source"] in SOURCES)
             require(isinstance(step["content"], str) and step["content"])
+            require(step["content"].startswith("SYNTHETIC FICTIONAL CONTENT: "))
             instruction = step["instruction"]
             require(set(instruction) == {"action", "target"})
             require(instruction["action"] in ACTIONS)
