@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+build/
+dist/
+ahl-prompt.txt
+ahl-launch.py
+ahl-codex.log
+*-prompt.txt
+*-launch.py
+*.log
+runs/
+reports/
+BUILD-DONE.txt

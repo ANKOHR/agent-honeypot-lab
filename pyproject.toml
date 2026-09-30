@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-honeypot-lab"
+version = "1.0.0"
+description = "An isolated synthetic lab with deterministic scripted stand-ins"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[project.scripts]
+ahl = "ahl.cli:main"
+
+[tool.setuptools.package-data]
+ahl = ["packs/*/*/pack.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
